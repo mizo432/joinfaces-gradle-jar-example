@@ -7,8 +7,3 @@ joinfaces:
 server:
   servlet:
     context-path: /project
-
-logging:
-  level:
-    root: WARN
-    web: INFO
