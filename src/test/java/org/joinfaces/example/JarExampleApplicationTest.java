@@ -17,28 +17,30 @@ import static org.assertj.core.api.Assertions.assertThat;
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )
 @AutoConfigureTestRestTemplate
-public class JarExampleApplicationTest {
+class JarExampleApplicationTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
-    public void testHelloFromSpring() {
+     void testHelloFromSpring() {
         ResponseEntity<String> entity = restTemplate.getForEntity("/index.xhtml", String.class);
 
         checkResponse(entity);
     }
 
     @Test
-    public void testWelcomePageRedirect() {
+     void testWelcomePageRedirect() {
         ResponseEntity<String> entity = restTemplate.getForEntity("/", String.class);
 
         checkResponse(entity);
     }
 
     private static void checkResponse(ResponseEntity<String> entity) {
-        assertThat(entity.getStatusCode().is2xxSuccessful()).isTrue();
+        assertThat(entity.getStatusCode().is2xxSuccessful())
+                .isTrue();
 
-        assertThat(entity.getBody()).contains("Hello from Spring:");
+        assertThat(entity.getBody())
+                .contains("Hello from Spring:");
     }
 }

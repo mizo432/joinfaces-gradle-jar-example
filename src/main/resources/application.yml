@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: joinfaces-demo
+joinfaces:
+  faces:
+    project-stage: development
+server:
+  servlet:
+    context-path: /project
+
+logging:
+  level:
+    root: WARN
+    web: INFO
