@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: joinfaces-demo
 joinfaces:
   faces:
     project-stage: development
@@ -9,4 +6,12 @@ server:
     context-path: /project
   tomcat:
     accesslog:
+      enabled: true
+spring:
+  application:
+    name: joinfaces-demo
+  devtools:
+    restart:
+      enabled: true
+    livereload:
       enabled: true
