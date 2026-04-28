@@ -7,3 +7,6 @@ joinfaces:
 server:
   servlet:
     context-path: /project
+  tomcat:
+    accesslog:
+      enabled: true
