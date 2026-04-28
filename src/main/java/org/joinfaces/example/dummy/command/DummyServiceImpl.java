@@ -1,4 +1,4 @@
-package org.joinfaces.example.dummy.service;
+package org.joinfaces.example.dummy.command;
 
 import java.time.LocalDateTime;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
-package org.joinfaces.example.dummy;
+package org.joinfaces.example.present;
 
-import org.joinfaces.example.dummy.service.DummyService;
+import org.joinfaces.example.dummy.command.DummyService;
 import org.springframework.stereotype.Component;
 
 /**

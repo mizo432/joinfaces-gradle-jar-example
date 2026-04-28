@@ -1,4 +1,4 @@
-package org.joinfaces.example.dummy.service;
+package org.joinfaces.example.dummy.command;
 
 public interface DummyService {
 

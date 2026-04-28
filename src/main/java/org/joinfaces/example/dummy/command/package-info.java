@@ -1,0 +1,1 @@
+package org.joinfaces.example.dummy.command;
