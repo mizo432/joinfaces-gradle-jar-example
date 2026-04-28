@@ -18,19 +18,20 @@ public class DummyBean {
   private final DummyService dummyService;
 
   /**
-   * Constructs a new instance of {@code DummyBean} and injects the specified {@code DummyService}.
+   * DummyBeanのコンストラクタ。
+   * このコンストラクタは、依存関係である{@link DummyService}を注入します。
    *
-   * @param dummyService The service component used to retrieve textual data. This dependency is
-   *     mandatory and is expected to be provided by the Spring Dependency Injection container.
+   * @param dummyService テキストデータを提供するサービス層の依存。
    */
   public DummyBean(DummyService dummyService) {
     this.dummyService = dummyService;
   }
 
   /**
-   * Retrieves a textual message from the underlying {@link DummyService}.
+   * テキストデータを取得します。
+   * このメソッドは、{@link DummyService}からテキストデータを取得して返します。
    *
-   * @return A string containing the text provided by the service implementation.
+   * @return サービス層から提供されるテキストデータ
    */
   public String getText() {
     return dummyService.getText();
